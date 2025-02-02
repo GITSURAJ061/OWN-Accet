@@ -1,0 +1,97 @@
+<!-- About Me Section -->
+<section class="about-container">
+    <img src="/image/IMG_20250101_081827.jpg" alt="My Photo" class="about-img">
+    <h1>About Me</h1>
+    <p class="about-text">
+        Hi, I'm a passionate Front-end Developer with 3 years of experience in building modern, responsive, and interactive websites.  
+        I love turning ideas into reality using clean, efficient, and scalable code.
+    </p>
+
+    <h2>Skills & Technologies</h2>
+    <div class="skills-container">
+        <div class="skill-box">HTML</div>
+        <div class="skill-box">CSS</div>
+        <div class="skill-box">JavaScript</div>
+        <div class="skill-box">React.js</div>
+        <div class="skill-box">Vue.js</div>
+        <div class="skill-box">Tailwind CSS</div>
+        <div class="skill-box">Git & GitHub</div>
+        <div class="skill-box">SEO Optimization</div>
+    </div>
+
+    <div class="cta">
+        <a href="contact.html">Let's Work Together</a>
+    </div>
+</section>
+
+<style>
+ /* About Section Styles */
+    .about-container {
+        text-align: center;
+        padding: 50px 20px;
+        background: #1a1a2e;
+        color: #fff;
+    }
+    .about-img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 4px solid #ff4757;
+        margin-bottom: 20px;
+    }
+    .about-container h1 {
+        font-size: 32px;
+        color: #ff4757;
+        margin-bottom: 10px;
+    }
+    .about-text {
+        max-width: 600px;
+        margin: 0 auto 20px;
+        color: #ddd;
+    }
+    .skills-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 20px;
+    }
+    .skill-box {
+        background: #222;
+        color: white;
+        padding: 10px 15px;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background 0.3s;
+    }
+    .skill-box:hover {
+        background: #ff4757;
+    }
+    .cta {
+        margin-top: 30px;
+    }
+    .cta a {
+        text-decoration: none;
+        background: #ff4757;
+        color: white;
+        padding: 12px 20px;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+    .cta a:hover {
+        background: white;
+        color: #ff4757;
+    }
+</style>
+
+<script>
+    // JavaScript to add a hover effect for skills
+    document.querySelectorAll('.skill-box').forEach(skill => {
+        skill.addEventListener('mouseenter', () => {
+            skill.style.color = '#000';
+        });
+        skill.addEventListener('mouseleave', () => {
+            skill.style.color = '#fff';
+        });
+    });
+</script>

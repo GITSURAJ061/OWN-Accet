@@ -1,0 +1,74 @@
+<!-- Services Section -->
+<section class="services-container">
+    <h2>My Services</h2>
+    <p>What I offer as a Front-end Developer</p>
+
+    <div class="service-box">
+        <h3>Front-end Development</h3>
+        <p>Creating responsive and dynamic websites using HTML, CSS, JavaScript, React, and Vue.js.</p>
+    </div>
+    <div class="service-box">
+        <h3>UI/UX Implementation</h3>
+        <p>Converting Figma or Adobe XD designs into real web pages with pixel-perfect accuracy.</p>
+    </div>
+    <div class="service-box">
+        <h3>Website Optimization</h3>
+        <p>Improving website speed, SEO, and performance for better user experience.</p>
+    </div>
+    <div class="service-box">
+        <h3>Mobile-Friendly Design</h3>
+        <p>Ensuring websites are fully responsive and work seamlessly on all devices.</p>
+    </div>
+    <div class="service-box">
+        <h3>Freelancing Services</h3>
+        <p>Providing custom website development services for businesses and startups.</p>
+    </div>
+    <div class="service-box">
+        <h3>Technical Consultation</h3>
+        <p>Helping businesses choose the right technology and improve their online presence.</p>
+    </div>
+</section>
+
+<style>
+    /* Services Section Styles */
+    .services-container {
+        text-align: center;
+        padding: 50px 20px;
+        background: #1a1a2e;
+    }
+    .services-container h2 {
+        color: #ff4757;
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+    .services-container p {
+        color: #ddd;
+        margin-bottom: 30px;
+    }
+    .service-box {
+        background: #222;
+        color: white;
+        padding: 20px;
+        margin: 10px auto;
+        width: 300px;
+        border-radius: 10px;
+        transition: transform 0.3s, background 0.3s;
+    }
+    .service-box:hover {
+        transform: scale(1.05);
+        background: #ff4757;
+        color: #000;
+    }
+</style>
+
+<script>
+    // JavaScript to add hover effect
+    document.querySelectorAll('.service-box').forEach(box => {
+        box.addEventListener('mouseenter', () => {
+            box.style.color = '#000';
+        });
+        box.addEventListener('mouseleave', () => {
+            box.style.color = '#fff';
+        });
+    });
+</script>
