@@ -11,14 +11,13 @@ body {
 /* Navigation */
 nav {
     background: #2e2ec5;
-    padding: 10px 0;
+    padding: 15px 0;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 .logo {
-    background-color: orange;
     color: #ff4757;
     padding-left: 2%;
     font-size: 24px;
@@ -29,10 +28,10 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content:space-evenly; /* Center items horizontally */
-    align-items: flex-start; /* Align items vertically */
+    justify-content:space-between; /* Center items horizontally */
+    align-items: center; /* Align items vertically */
     gap: 0px; /* Space between menu items */
-    flex-direction: row ; /* Ensure it stays in a row */
+    flex-direction: row; /* Ensure it stays in a row */
   }
   
   nav ul li {
@@ -74,10 +73,11 @@ nav ul {
   }
   
   /* Responsive Navigation */
-  @media (max-width: 390px) {
+  @media (max-width: 768px) {
     nav ul {
       flex-direction: row; /* Ensure it's still in a row on small screens */
-      gap: 1px;
+      flex-wrap: wrap; /* Allow wrapping if necessary */
+      gap: 15px;
     }
   }
   /* Hero Section */
